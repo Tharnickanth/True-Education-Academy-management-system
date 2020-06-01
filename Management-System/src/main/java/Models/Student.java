@@ -1,23 +1,34 @@
 package Models;
 
-public class Student extends NewStudent {
-
-    public String SID;
-    public String CourseName;
-    public String code;
-    public String Batch;
-   
 
 
-    public Student(String SID, String CourseName, String code, String Batch, String fName, String lName, String Address, String District, String NIC, String DOB, String Email, String tNo) {
+public class Student {
 
-        super(fName, lName, Address, District, NIC, DOB, Email, tNo);
-        this.SID = SID;
-        this.CourseName = CourseName;
-        this.code = code;
-        this.Batch = Batch;
+    public String FirstName;
+    public String LastName;
+    public String Address;
+    public String District;
+    public String DOB;
+    public String NIC;
+    public String Gender;
+    public String Email;
+    public String TelephoneNo;
+    public String StudentID;
 
+
+    public Student(String FirstName,String LastName,String Address,String District,String DOB,String NIC,String Gender,String Email,String TelephoneNo,String StudentID) {
+    
+        this.FirstName=FirstName;
+        this.LastName=LastName;
+        this.Address=Address;
+        this.District=District;
+        this.DOB=DOB;
+        this.NIC=NIC;
+        this.Gender=Gender;
+        this.Email=Email;
+        this.TelephoneNo=TelephoneNo;
+        this.StudentID=StudentID;
     }
 
-   
 }
+
