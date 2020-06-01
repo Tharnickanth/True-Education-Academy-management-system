@@ -1,11 +1,11 @@
+
 package Models;
 
 
-public class UndergraduateStudent extends Student {
-
+public class CertificateStudent extends Student {
     public String Program;
-
-    public UndergraduateStudent(String FirstName,String LastName,String Address,String District,String DOB,String NIC,String Gender,String Email,String TelephoneNo,String StudentID,String Program) {
+    
+    public CertificateStudent(String FirstName,String LastName,String Address,String District,String DOB,String NIC,String Gender,String Email,String TelephoneNo,String StudentID,String Program) {
         super(FirstName,LastName,Address,District,DOB,NIC,Gender,Email,TelephoneNo,StudentID);
         this.Program=Program;
         
@@ -53,9 +53,4 @@ public class UndergraduateStudent extends Student {
         return this.FirstName;
     }
     
-    
-    
-    
-    
-
 }
