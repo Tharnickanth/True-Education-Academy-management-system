@@ -1,13 +1,13 @@
 Models\eventList.class
 Views\Add_Subject$3.class
 Views\Add_Subject$8.class
-Views\Add_Subject$11.class
 Views\Add_Subject$10.class
 Views\Add_Subject$2.class
 Models\NewStudent.class
 Views\Add_Subject$7.class
 Views\Add_Subject$6.class
 Views\Add_Subject.class
+Models\Course.class
 Models\Student.class
 Models\event.class
 Views\Add_Subject$1.class
