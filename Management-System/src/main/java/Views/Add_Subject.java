@@ -19,6 +19,7 @@ import javax.swing.JTextField;
 import Models.Course;
 import java.util.ArrayList;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableModel;
 
 
 /**
@@ -125,11 +126,11 @@ public class Add_Subject extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
+        lblLecturer = new javax.swing.JLabel();
+        lblCCode = new javax.swing.JLabel();
+        lblCname = new javax.swing.JLabel();
+        lblCFee = new javax.swing.JLabel();
+        lblCDuration = new javax.swing.JLabel();
         txtCFee = new javax.swing.JTextField();
         txtCCode = new javax.swing.JTextField();
         txtCName = new javax.swing.JTextField();
@@ -211,20 +212,20 @@ public class Add_Subject extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Trajan Pro 3", 0, 11)); // NOI18N
         jLabel2.setText("Course INFO");
 
-        jLabel3.setFont(new java.awt.Font("Trajan Pro 3", 0, 18)); // NOI18N
-        jLabel3.setText("Lecturer in cHARGE : ");
+        lblLecturer.setFont(new java.awt.Font("Trajan Pro 3", 0, 18)); // NOI18N
+        lblLecturer.setText("Lecturer in cHARGE : ");
 
-        jLabel4.setFont(new java.awt.Font("Trajan Pro 3", 0, 18)); // NOI18N
-        jLabel4.setText("Course Code :");
+        lblCCode.setFont(new java.awt.Font("Trajan Pro 3", 0, 18)); // NOI18N
+        lblCCode.setText("Course Code :");
 
-        jLabel5.setFont(new java.awt.Font("Trajan Pro 3", 0, 18)); // NOI18N
-        jLabel5.setText("Course Name :");
+        lblCname.setFont(new java.awt.Font("Trajan Pro 3", 0, 18)); // NOI18N
+        lblCname.setText("Course Name :");
 
-        jLabel6.setFont(new java.awt.Font("Trajan Pro 3", 0, 18)); // NOI18N
-        jLabel6.setText("Course Fee :");
+        lblCFee.setFont(new java.awt.Font("Trajan Pro 3", 0, 18)); // NOI18N
+        lblCFee.setText("Course Fee :");
 
-        jLabel7.setFont(new java.awt.Font("Trajan Pro 3", 0, 18)); // NOI18N
-        jLabel7.setText("Course Duration :");
+        lblCDuration.setFont(new java.awt.Font("Trajan Pro 3", 0, 18)); // NOI18N
+        lblCDuration.setText("Course Duration :");
 
         txtCFee.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -297,6 +298,11 @@ public class Add_Subject extends javax.swing.JFrame {
                 "Course Code", "Course Name", "Course Fee", "Course Duration", "Lecturer"
             }
         ));
+        tblDisplay.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tblDisplayMouseClicked(evt);
+            }
+        });
         jScrollPane1.setViewportView(tblDisplay);
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -310,12 +316,12 @@ public class Add_Subject extends javax.swing.JFrame {
                             .addComponent(btnInsert)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(btnReset))
-                        .addComponent(jLabel7)
+                        .addComponent(lblCDuration)
                         .addGroup(jPanel3Layout.createSequentialGroup()
                             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(lblCFee, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(lblCname, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(lblCCode, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGap(67, 67, 67)
                             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addComponent(txtCCduration, javax.swing.GroupLayout.DEFAULT_SIZE, 179, Short.MAX_VALUE)
@@ -323,7 +329,7 @@ public class Add_Subject extends javax.swing.JFrame {
                                 .addComponent(txtCName)
                                 .addComponent(txtCFee)))
                         .addGroup(jPanel3Layout.createSequentialGroup()
-                            .addComponent(jLabel3)
+                            .addComponent(lblLecturer)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                             .addComponent(txtLect, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(jLabel2))
@@ -345,23 +351,23 @@ public class Add_Subject extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblCCode, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtCCode, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblCname, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtCName, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblCFee, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtCFee, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(15, 15, 15)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblCDuration, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtCCduration, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblLecturer, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtLect, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(8, 8, 8)
@@ -464,6 +470,17 @@ public class Add_Subject extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtCCodeKeyTyped
 
+    private void tblDisplayMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblDisplayMouseClicked
+        // TODO add your handling code here:
+        int i=tblDisplay.getSelectedRow();
+        TableModel model=tblDisplay.getModel();
+        txtCCode.setText(model.getValueAt(i, 0).toString());
+        txtCName.setText(model.getValueAt(i, 1).toString());
+        txtCFee.setText(model.getValueAt(i, 2).toString());
+        txtCCduration.setText(model.getValueAt(i, 3).toString());
+        txtLect.setText(model.getValueAt(i, 4).toString());
+    }//GEN-LAST:event_tblDisplayMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -509,15 +526,15 @@ public class Add_Subject extends javax.swing.JFrame {
     private javax.swing.JDialog jDialog2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel lblCCode;
+    private javax.swing.JLabel lblCDuration;
+    private javax.swing.JLabel lblCFee;
+    private javax.swing.JLabel lblCname;
+    private javax.swing.JLabel lblLecturer;
     private javax.swing.JTable tblDisplay;
     private javax.swing.JTextField txtCCduration;
     private javax.swing.JTextField txtCCode;

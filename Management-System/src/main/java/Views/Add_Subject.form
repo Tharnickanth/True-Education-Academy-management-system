@@ -161,12 +161,12 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="btnReset" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="jLabel7" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblCDuration" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel6" alignment="0" min="-2" pref="170" max="-2" attributes="0"/>
-                                  <Component id="jLabel5" alignment="0" min="-2" pref="170" max="-2" attributes="0"/>
-                                  <Component id="jLabel4" alignment="0" min="-2" pref="170" max="-2" attributes="0"/>
+                                  <Component id="lblCFee" alignment="0" min="-2" pref="170" max="-2" attributes="0"/>
+                                  <Component id="lblCname" alignment="0" min="-2" pref="170" max="-2" attributes="0"/>
+                                  <Component id="lblCCode" alignment="0" min="-2" pref="170" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -177,7 +177,7 @@
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblLecturer" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Component id="txtLect" min="-2" pref="179" max="-2" attributes="0"/>
                           </Group>
@@ -206,27 +206,27 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel4" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                              <Component id="lblCCode" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
                               <Component id="txtCCode" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel5" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                              <Component id="lblCname" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
                               <Component id="txtCName" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel6" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                              <Component id="lblCFee" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
                               <Component id="txtCFee" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel7" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                              <Component id="lblCDuration" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
                               <Component id="txtCCduration" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel3" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                              <Component id="lblLecturer" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
                               <Component id="txtLect" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -256,7 +256,7 @@
             <Property name="text" type="java.lang.String" value="Course INFO"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel3">
+        <Component class="javax.swing.JLabel" name="lblLecturer">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Trajan Pro 3" size="18" style="0"/>
@@ -264,7 +264,7 @@
             <Property name="text" type="java.lang.String" value="Lecturer in cHARGE : "/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel4">
+        <Component class="javax.swing.JLabel" name="lblCCode">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Trajan Pro 3" size="18" style="0"/>
@@ -272,7 +272,7 @@
             <Property name="text" type="java.lang.String" value="Course Code :"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel5">
+        <Component class="javax.swing.JLabel" name="lblCname">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Trajan Pro 3" size="18" style="0"/>
@@ -280,7 +280,7 @@
             <Property name="text" type="java.lang.String" value="Course Name :"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel6">
+        <Component class="javax.swing.JLabel" name="lblCFee">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Trajan Pro 3" size="18" style="0"/>
@@ -288,7 +288,7 @@
             <Property name="text" type="java.lang.String" value="Course Fee :"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel7">
+        <Component class="javax.swing.JLabel" name="lblCDuration">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Trajan Pro 3" size="18" style="0"/>
@@ -422,6 +422,9 @@
                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tblDisplayMouseClicked"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>

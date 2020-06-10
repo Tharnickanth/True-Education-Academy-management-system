@@ -1,6 +1,7 @@
 Models\eventList.class
 Views\Add_Subject$3.class
 Views\Add_Subject$8.class
+Views\Add_Subject$11.class
 Views\Add_Subject$10.class
 Views\Add_Subject$2.class
 Models\NewStudent.class
